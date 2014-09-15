@@ -8,3 +8,5 @@ cmather:iron-router@0.7.1
 accounts-base
 accounts-password
 accounts-ui
+reveal-js
+

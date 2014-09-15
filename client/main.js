@@ -7,3 +7,6 @@ Global client-side code. Loads last.
 /+ ---------------------------------------------------- */
 
 //
+
+    Reveal.initialize();
+ 
