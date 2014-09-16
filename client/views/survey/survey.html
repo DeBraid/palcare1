@@ -1,0 +1,68 @@
+<template name="survey">
+   {{> slideshow }}
+</template>
+
+<template name="slideshow">
+
+  <div class="reveal">
+      <div class="slides">
+          {{> selfIntro }}
+          {{> MOARslides }}
+          {{> theEnd}}
+
+      </div>
+  </div>
+
+</template>
+
+<template name="selfIntro">
+  <section>
+    <h1>Health Care Survey</h1>
+    <h3>Plan for your future</h3>
+    <p>
+      <small>By <a href="http://cacheflow.ca">Derek Braid</a></small>
+    </p>
+    <p>
+      <small><a href="http://cacheflow.ca">cacheflow.ca</a></small>
+    </p>
+  </section>
+
+  
+</template>
+
+  <template name="MOARslides">
+        <section>
+          <section id="fragments">
+            <h2>WHY?</h2>
+            
+            <ul>
+              <li class="fragment roll-in">assess your health </li>
+              <p></p>
+              <p></p>
+              <li class="fragment roll-in">plan for your future</li>
+              <p></p>
+              <p></p>
+              <li class="fragment roll-in">protect your loved ones</li>
+            </ul> 
+          </section>
+        </section>
+
+        <section>
+          <h2>How Old are you?</h2>
+          <p class="fragment fade-in">Under 60</p>
+          <p class="fragment fade-in">60+</p>
+          
+        </section>
+        
+        
+</template>        
+
+<template name="theEnd">
+  <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+    <h2>Contact US</h2>
+      <p><a href="https://github.com/DeBraid/">GitHub</a></p>
+      <p><a href="http://twitter.com/Royal_Arse">Twitter</a></p>
+
+    <h3>By Derek Braid</h3>
+  </section>
+</template>

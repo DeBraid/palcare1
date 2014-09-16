@@ -1,12 +1,15 @@
 <template name="header">
-  <div class="header">
     <div class="ui menu">
       <a class="active item" href="{{pathFor 'homepage'}}">
         <i class="home icon"></i> Home
       </a>
       <a class="item">
+        <i class="home icon" href="{{pathFor 'survey'}}"></i> Survey
+      </a>
+      <a class="item">
         <i class="mail icon" href="{{pathFor 'contact'}}"></i> Contact
       </a>
+
       <div class="right menu">
         <div class="item">
           <div class="ui icon input">
@@ -16,7 +19,4 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
-
-

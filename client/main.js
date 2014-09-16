@@ -13,7 +13,7 @@ Global client-side code. Loads last.
 // })
 
 
-Template.homepage.rendered = function(){
+Template.survey.rendered = function(){
   Reveal.initialize({
     controls: true,
     progress: true,

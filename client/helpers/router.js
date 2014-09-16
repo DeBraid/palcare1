@@ -69,7 +69,12 @@ Router.map(function() {
     path: '/'
   });
 
-  this.route('content');
+  this.route('survey', {
+    path: '/survey', 
+    template: 'survey'
+  });
+
+  this.route('contact');
 
   // Users
 
