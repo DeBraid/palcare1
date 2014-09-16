@@ -8,5 +8,16 @@ Global client-side code. Loads last.
 
 //
 
-    Reveal.initialize();
- 
+// Meteor.defer(function () {
+//   Reveal.initialize();
+// })
+
+
+Template.homepage.rendered = function(){
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true
+  });
+};
