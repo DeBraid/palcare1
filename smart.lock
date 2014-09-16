@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "reveal-js": {}
+      "reveal-js": {},
+      "font-awesome": {}
     },
     "packages": {
       "reveal-js": {
         "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
         "tag": "v2.6.2",
         "commit": "66ca194e49e3c48fe7d4a62ac89c7ed0d6e0814a"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.1.0",
+        "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
       }
     }
   }

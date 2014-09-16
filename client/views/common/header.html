@@ -1,23 +1,22 @@
 <template name="header">
   <div class="header">
-    <h1>Void</h1>
-    <ul>
-      <li><a href="{{pathFor 'homepage'}}">Homepage</a></li>
-      <li><a href="{{pathFor 'content'}}">Content page</a></li>
-      <li><a href="{{pathFor 'items'}}">Items</a></li>
-      <li><a href="/404">404 Link</a></li>
-      {{#if isLoggedIn}}
-        <li><a href="/" class="log-out">Log Out</a></li>
-      {{else}} 
-        <li><a href="{{pathFor 'signup'}}">Sign Up</a></li>
-        <li><a href="{{pathFor 'login'}}">Log In</a></li>   
-      {{/if}}
-    </ul>
-  </div>
-  <hr/>
-  <div class="messages">
-    {{#each messages}}
-      <p class="message message-{{type}}">{{message}}</p>
-    {{/each}}
+    <div class="ui menu">
+      <a class="active item" href="{{pathFor 'homepage'}}">
+        <i class="home icon"></i> Home
+      </a>
+      <a class="item">
+        <i class="mail icon" href="{{pathFor 'contact'}}"></i> Contact
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+
