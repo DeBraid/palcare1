@@ -1,4 +1,31 @@
 <template name="homepage">
-  <h1>welcome </h1>
+{{> welcome }}
+</template>
+
+<template name="welcome">
+
+    <div id="header" class="center aligned header-wrapper">
+        <div class="huge center aligned ui header">        
+          <div class="welcome-logo">
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                      <a href="{{ pathFor 'home' }}">
+                        <i class="circular massive blue users icon"></i>
+
+                      </a>
+                    </div>
+
+                </div>
+
+            <div id="subHeaderText" class="sub header">
+              <button class="ui blue button large"><a href="{{pathFor 'survey'}}" style="text-decoration:none">Being Survey</a></button>
+              <h2>Control your future by planning for good health.
+              </h2>
+
+            </div>
+          </div>
+        </div>
+        
+    </div>
 </template>
 
